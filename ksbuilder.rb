@@ -5,11 +5,11 @@
 class Ksbuilder < Formula
   desc ""
   homepage "https://github.com/kubesphere/ksbuilder"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
-    url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.2/ksbuilder_0.4.2_darwin_all.tar.gz"
-    sha256 "9abd462e5dd7579d8e0e690e2879243d9a450c2a70ae504728ef78c12ca62ecf"
+    url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.3/ksbuilder_0.4.3_darwin_all.tar.gz"
+    sha256 "9a04bf9fad77a952d66c1df7c10d05a1a5ee30a8610409475e5c4106d3e927be"
 
     def install
       bin.install "ksbuilder"
@@ -19,8 +19,8 @@ class Ksbuilder < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.2/ksbuilder_0.4.2_linux_amd64.tar.gz"
-        sha256 "a2c2a7d8c82aa5688cfbd2f0bb1c5efe803e81b964a73b36ad261f572852e8bc"
+        url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.3/ksbuilder_0.4.3_linux_amd64.tar.gz"
+        sha256 "4bf243037b22c7f15854113f62f2dfbc1df0cb7d0cf60511fa64759e42d1d558"
 
         def install
           bin.install "ksbuilder"
@@ -29,8 +29,8 @@ class Ksbuilder < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.2/ksbuilder_0.4.2_linux_arm64.tar.gz"
-        sha256 "23b3b6bf30f20c82d32d6c2a42ec7de237e3e338cd72afbfbe0feb74819f5377"
+        url "https://github.com/kubesphere/ksbuilder/releases/download/v0.4.3/ksbuilder_0.4.3_linux_arm64.tar.gz"
+        sha256 "3015d942bd2fef334823923e668c6ad45fa084e66aed452601b6ed66bf84a3da"
 
         def install
           bin.install "ksbuilder"
